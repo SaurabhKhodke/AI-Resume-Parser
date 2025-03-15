@@ -2,3 +2,4 @@ Flask
 PyPDF2
 pandas
 google-generativeai
+gunicorn
