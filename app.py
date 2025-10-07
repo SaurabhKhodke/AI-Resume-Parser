@@ -6,7 +6,7 @@ import json
 import pandas as pd
 from datetime import datetime
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyACCG9fWDn7aMQxxgT6HLzgGkePogEAzZo"
+os.environ["GOOGLE_API_KEY"] = "Enter your API KEY here"
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 app = Flask(__name__)
@@ -144,4 +144,5 @@ Resume text: {text}"""
         return jsonify({"error": f"Processing error: {str(e)}"})
 
 if __name__ == "__main__":
+
     app.run(debug=True)
